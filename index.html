@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방수현 | 프론트엔드 포트폴리오</title>
+    <meta name="keywords" content="포트폴리오, ">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" sizes="16x16">
+    <script src="js/index.js"></script>
+</head>
+
+<body onscroll="scrollCheck()">
+    <header>
+        <nav>
+            <div class="gnb">
+                <figure><p><a href="index.html" title="메인">
+                    <span class="rgb_7188252">&#60;</span>Bang Su Hyun<span class="rgb_7188252">&#47;&#62;</span></p></a>
+                </figure>
+                <ul>
+                    <a><li onclick="secChange(0)" style="display: none;">Main
+                        <div class="gnbani"></div>
+                    </li></a>
+                    <a title="프로젝트 페이지" onmouseover="gnbAnimation1()" onmouseout="gnbAnimationOff1()"><li onclick="secChange(1)">
+                        <span id="gnb_animation_1">Project</span>
+                        <div class="gnbani"></div>
+                    </li></a>
+                    <a title="어바웃 페이지" onmouseover="gnbAnimation2()" onmouseout="gnbAnimationOff2()"><li onclick="secChange(2)">
+                        <span id="gnb_animation_2">About</span>
+                        <div class="gnbani"></div>
+                    </li></a>
+                    <a title="컨텍트 페이지" onmouseover="gnbAnimation3()" onmouseout="gnbAnimationOff3()"><li onclick="secChange(3)">
+                        <span id="gnb_animation_3">Contact</span>
+                        <div class="gnbani"></div>
+                    </li></a>
+                </ul>
+                <div class="gnb_moblie">
+                    <div class="gnb_moblie_wrap">
+                        <div class="gnb_moblie_pos" onclick="gnbMopenclose()">
+                            <div id="gnb_moblie_line_1"></div>
+                            <div id="gnb_moblie_line_2"></div>
+                            <div id="gnb_moblie_line_3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="gnb_page">
+                <div class="gnb_page_pos">
+                    <ul>
+                        <li><h3><a href="#" onclick="secChange(1),gnbMopenclose()" class="gnb_pos_hover"><span class="gblue">P</span>roject</h3></a></li>
+                        <li><h3><a href="#" onclick="secChange(2),gnbMopenclose()" class="gnb_pos_hover"><span class="gblue">A</span>bout</h3></a></li>
+                        <li><h3><a href="#" onclick="secChange(3),gnbMopenclose()" class="gnb_pos_hover"><span class="gblue">C</span>ontact</h3></a></li>
+                    </ul>
+                    <p></p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="loading"></div>
+        <section class="main_container">
+            <div class="sec_slide">
+                <div class="project_margin"></div>
+                <div class="start_page">
+                    <span class="start_margin">
+                        <h2><br></h2><h2><br></h2><h2><br></h2>
+                    </span>
+                    <h2>안녕하세요 :)</h2>
+                    <p><br><span class="rgb_7188252">Web-developer</span></p>
+                    <h3>방수현의 포트폴리오 입니다!</h3>
+                    <div class="main_comu">
+                        <a href="#" onmouseover="mainemailOn()" onmouseout="mainemailOff()"><p><img src="img/email_icon.svg"></p></a>
+                        <a href="https://github.com/bangsuhyun" onmouseover="maingitOn()" onmouseout="maingitOff()"><p><img src="img/github_icon.svg"></p></a>
+                        <a href="#" onmouseover="mainkaOn()" onmouseout="mainkaOff()"><p><img src="img/tel_icon.svg"></p></a>
+                        <div class="main_comu_email">
+                            <p>bangt9687@naver.com</p>
+                        </div>
+                        <div class="main_comu_git">
+                            <p>클릭 시 이동합니다</p>
+                        </div>
+                        <div class="main_comu_kakao">
+                            <p>010 4018 9692</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec_slide">
+                <div class="project_margin"></div>
+                <div class="project">
+                    <div class="project_slide">
+                        <div class="project_slide_text">
+                            <div class="project_etiqa_wrap" onmouseover="projectWrapOn()" onmouseout="projectWrapOff()"
+                            onclick="projectOpen(0)">
+                                <!--호버시 텍스트 위치 조정-->
+                                <h1>ETIQA</h1>
+                                <h3>Responsive Web | 4인 프로젝트</h3>
+                                <p>
+                                    20년 11월<br><br>
+                                    반응형 미디어쿼리, jQuery, 내비게이션 이벤트, Video 태그,<br> 슬라이드, 마우스오버 이벤트, 스크롤 이벤트, CSS 애니메이션, 아코디언<br><br>
+                                    <span onmouseover="viewOn()" onmouseout="viewOff()" class="viewOnOff">클릭 시 미리보기&#8595; </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_slide">
+                        <div class="project_slide_text">
+                            <div class="project_netflix_wrap" onmouseover="projectWrapOn()" onmouseout="projectWrapOff()"
+                            onclick="projectOpen(1)">
+                                <!--onclick="projectOpen(1)"-->
+                                <!--호버시 텍스트 위치 조정-->
+                                <h1>NETFLIX</h1>
+                                <h3>Responsive Web | 클론 사이트</h3>
+                                <p>
+                                    20년 12월<br>
+                                    반응형 미디어쿼리, 아코디언<br><br>
+                                    <span onmouseover="viewOn()" onmouseout="viewOff()" class="viewOnOff">클릭 시 미리보기&#8595; </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_slide">
+                        <div class="project_slide_text">
+                            <div class="project_tesla_wrap" onmouseover="projectWrapOn()" onmouseout="projectWrapOff()"
+                            onclick="projectOpen(2)">
+                                <!--호버시 텍스트 위치 조정-->
+                                <h1>TESLA</h1>
+                                <h3>Responsive Web | 1인 프로젝트</h3>
+                                <p>
+                                    20년 10월<br>
+                                    반응형 미디어쿼리, 스크롤 이벤트<br><br>
+                                    <span onmouseover="viewOn()" onmouseout="viewOff()" class="viewOnOff">클릭 시 미리보기&#8595; </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_slide">
+                        <div class="project_slide_text">
+                            <div class="project_nike_wrap" onmouseover="projectWrapOn()" onmouseout="projectWrapOff()" onclick="projectOpen(3)">
+                                <!--호버시 텍스트 위치 조정-->
+                                <h1>NIKE</h1>
+                                <h3>Responsive Web | 클론 사이트</h3>
+                                <p>
+                                    20년 11월<br>
+                                    반응형 미디어쿼리, 슬라이드, 아코디언<br><br>
+                                    <span onmouseover="viewOn()" onmouseout="viewOff()" class="viewOnOff">클릭 시 미리보기&#8595; </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_slide">
+                        <div class="project_slide_text">
+                            <div class="project_sml_wrap" onmouseover="projectWrapOn()" onmouseout="projectWrapOff()" onclick="projectOpen(4)">
+                                <!--호버시 텍스트 위치 조정-->
+                                <h1>S.M.L</h1>
+                                <h3>Responsive Web | 클론사이트</h3>
+                                <p>
+                                    20년 9월<br>
+                                    반응형 미디어쿼리, jQuery<br><br>
+                                    <span onmouseover="viewOn()" onmouseout="viewOff()" class="viewOnOff">클릭 시 미리보기&#8595; </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project_slide">
+                        <div class="project_slide_text">
+                            <div class="project_apple_wrap" onmouseover="projectWrapOn()" onmouseout="projectWrapOff()" onclick="projectOpen(5)">
+                                <!--호버시 텍스트 위치 조정-->
+                                <h1>APPLE</h1>
+                                <h3>Responsive Web | 클론사이트</h3>
+                                <p>
+                                    20년 9월<br>
+                                    반응형 미디어쿼리<br><br>
+                                    <span onmouseover="viewOn()" onmouseout="viewOff()" class="viewOnOff">클릭 시 미리보기&#8595; </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="prev_bt" onclick="movePrev()" onmouseover="" onmouseout="">
+                        <span class="prev_bt_before"></span>
+                        <span class="prev_bt_after"></span>
+                    </div>
+                    <div id="next_bt" onclick="moveNext()">
+                        <span class="next_bt_before"></span>
+                        <span class="next_bt_after"></span>
+                    </div>
+                </div>
+                <div class="project_ex">
+                    <div class="ex_etiqa">
+                        <a href="https://bangsuhyun.github.io/ETIQA/"><h2>깃허브 바로 가기><img src="img/icon_link.svg"></h2></a>
+                        <figure><img src="img/etiqa_full_1.jpg"></figure>
+                        <figure><img src="img/etiqa_full_2.jpg"></figure> 
+                        <figure><img src="img/etiqa_full_3.jpg"></figure> 
+                        <figure><img src="img/etiqa_full_4.jpg"></figure> 
+                    </div>
+                </div>
+                <div class="project_ex">
+                    <div class="ex_netflix">
+                        <a href="https://bangsuhyun.github.io/netflix/"><h2>깃허브 바로 가기><img src="img/icon_link.svg"></h2></a>
+                        <figure><img src="img/netflix_full_1.png"></figure>
+                    </div>
+                </div>
+                <div class="project_ex">
+                    <div class="ex_tesla">
+                        <a href="https://bangsuhyun.github.io/tesla/"><h2>깃허브 바로 가기><img src="img/icon_link.svg"></h2></a>
+                        <figure><img src="img/tesla_full_1.png"></figure>
+                    </div>
+                </div>
+                <div class="project_ex">
+                    <div class="ex_nike">
+                        <a href="https://bangsuhyun.github.io/nike/"><h2>깃허브 바로 가기><img src="img/icon_link.svg"></h2></a>
+                        <figure><img src="img/nike_full_1.png"></figure>
+
+                    </div>
+                </div>
+                <div class="project_ex">
+                    <div class="ex_sml">
+                        <a href="https://bangsuhyun.github.io/sml/"><h2>깃허브 바로 가기><img src="img/icon_link.svg"></h2></a>
+                        <figure><img src="img/sml_full_1.png"></figure>
+                    </div>
+                </div>
+                <div class="project_ex">
+                    <div class="ex_apple">
+                        <a href="https://bangsuhyun.github.io/sml/"><h2>깃허브 바로 가기><img src="img/icon_link.svg"></h2></a>
+                        <figure><img src="img/apple_full_1.png"></figure>
+                        <figure><img src="img/applemac_full_1.png"></figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec_slide">
+                <div class="project_margin"></div>
+                <div class="about">
+                    <div class="about_flex">
+                        <div class="about_me">
+                            <div class="me_img">
+                                <img src="img/KakaoTalk_20201223_012240810.jpg">
+                            </div>
+
+                        </div>
+                        <div class="about_skills">
+                            <h2>About me<span>.</span></h2>
+                            <p>방수현</p>
+                            <p>생년월일 : 96.1.2</p>
+                            <p>E-mail : bangt9687@naver.com</p>
+                            <p>주소 : 시흥 능곡</p>
+                            <h2><br>Skill<span>.</span></h2>
+                            <div class="about_img">
+                                <img src="img/icon_html.svg">
+                                <img src="img/icon_css.svg">
+                                <img src="img/icon_js.svg">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="sec_slide">
+                <div class="contact_container">
+                    <div class="project_margin"></div>
+                    <div class="contact">
+                        <div class="contact_comu"></div>
+                        <div class="contact_re">
+                            <h3>Contact</h3>
+                            <p>궁금한 사항은 아래 연락처로 연락 주시기 바랍니다.<br><br><br>
+                            연락처<br><br>
+                            010 4018 9692<br><br>
+                            bangt9687@naver.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span><p class="footer">ⓒ 2021 방수현. All rights reserved.</p></span>
+    </footer>
+</body>
+</html>
