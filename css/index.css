@@ -783,12 +783,14 @@ a:hover{text-decoration: none;color:rgb(255,255,255);}
         }
 
     /*컨택트 페이지*/
+    .contact{
+        margin: 0;
+    }
     .contact_img{
         display: none;
     }
     .contact_comu{
         width: 100%;
-        margin:0 12px;
     }
     .contact_comu p{
         line-height: 3;
