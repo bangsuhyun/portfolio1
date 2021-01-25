@@ -808,4 +808,9 @@ a:hover{text-decoration: none;color:rgb(255,255,255);}
         font-size: 48px;
     }
     .start_margin{display: none;}
+    
+    /*어바웃 페이지*/
+    .me_img img{
+        display: none;
+    }
 }
