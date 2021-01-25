@@ -171,9 +171,9 @@ var gnbopencnt=0;
 function gnbMopenclose(){
     if(gnbopencnt==0){
         document.getElementById('gnb_page').style="animation: gnbOpen 0.3s forwards;";
-        document.querySelector('.gnb_page_pos li:nth-child(1)').style="animation: gnbh3on 0.2s 0.4s forwards;";
-        document.querySelector('.gnb_page_pos li:nth-child(2)').style="animation: gnbh3on 0.6s 0.4s forwards;";
-        document.querySelector('.gnb_page_pos li:nth-child(3)').style="animation: gnbh3on 1s 0.4s forwards;";
+        document.querySelector('.gnb_page_pos li:nth-child(1)').style="animation: gnbh3on 0.3s 0.2s forwards;";
+        document.querySelector('.gnb_page_pos li:nth-child(2)').style="animation: gnbh3on 0.6s 0.2s forwards;";
+        document.querySelector('.gnb_page_pos li:nth-child(3)').style="animation: gnbh3on 1s 0.2s forwards;";
         document.getElementById('gnb_moblie_line_1').style="animation: line1On 0.4s forwards;";
         document.getElementById('gnb_moblie_line_2').style="animation: line2On 0.4s forwards;";
         document.getElementById('gnb_moblie_line_3').style="animation: line3On 0.4s forwards;";
