@@ -174,16 +174,15 @@ a:hover{text-decoration: none;color:rgb(255,255,255);}
 .gnb_page_pos ul{
     position: absolute;
     width: 40%;
-/*     left:  calc(50% - (40% / 2)); */
-    left:  calc(50% - 104px);
-    top:10%;
+    left:  calc(50% - (40% / 2));
+    top:  calc(40% - (40% / 2));
 }
 .gnb_page_pos li{
     width: 600%;
 }
 .gnb_page_pos h3{
-    font-size: 3rem;
-    line-height: 1.8;
+    font-size: 4rem;
+    line-height: 2.1;
     letter-spacing: .4rem;
 }
 .gblue{
@@ -799,6 +798,16 @@ a:hover{text-decoration: none;color:rgb(255,255,255);}
 }
 @media screen and (max-width: 527px){
 
+    /*모바일 gnb*/
+    .gnb_page_pos ul{
+        left:  calc(50% - 104px);
+        top:  calc(40% - (40% / 2));
+    }
+    .gnb_page_pos h3{
+        font-size: 3rem;
+        line-height: 1.8;
+        letter-spacing: .4rem;
+    }
 
     /*메인 페이지*/
     .start_page h2{
