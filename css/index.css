@@ -781,7 +781,10 @@ a:hover{text-decoration: none;color:rgb(255,255,255);}
             top: calc(50% - (50% / 2)); left: calc(50% - (50% / 2));
             right: calc(50% - (50% / 2));bottom: calc(50% - (50% / 2));
         }
-
+        /*상세 페이지*/
+            .project_ex figure img{
+                display: none;
+            }
     /*컨택트 페이지*/
     .contact{
         margin: 0;
