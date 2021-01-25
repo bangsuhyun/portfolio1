@@ -174,7 +174,8 @@ a:hover{text-decoration: none;color:rgb(255,255,255);}
 .gnb_page_pos ul{
     position: absolute;
     width: 40%;
-    left:  calc(50% - (40% / 2));
+/*     left:  calc(50% - (40% / 2)); */
+    left:  calc(50% - 104px);
     top:10%;
 }
 .gnb_page_pos li{
