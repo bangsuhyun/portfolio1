@@ -653,6 +653,11 @@ a:hover{text-decoration: none;color:rgb(255,255,255);}
         margin: 36px 0 0 0;
         justify-content: space-between;
     }
+    .about_img img:hover{
+        -webkit-filter: drop-shadow(0 0 0 rgb(130,130,130)) invert(50%);
+        transition: all 0.4s;
+        cursor: pointer;
+    }
     .about h2 {
         font-size: 48px;
     }
